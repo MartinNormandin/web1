@@ -1,0 +1,335 @@
+body{
+    text-align: center;
+    background-image: url(../images/background-index.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.musiqueBody{
+    text-align: center;
+    background-image: url(../images/hell.webp);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home h1{
+    font-family: cursive;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #FCC201,
+        0 0 82px #FCC201,
+        0 0 92px #FCC201,
+        0 0 102px #EEB609,
+        0 0 151px #EEB609;
+}
+
+marquee{
+    height:auto;
+    width:1000px;
+    font-family:Arial;
+    font-size:22pt;
+    color:#000000;
+}
+
+.musiqueBody marquee{
+    height:auto;
+    width:1000px;
+    font-family:Arial;
+    font-size:22pt;
+    color: darkorange;
+}
+
+.navbar, .navbar-musique, .navbar-autres{
+    border: 5px ridge white;
+    border-radius: 10px;
+    background-color: #000000;
+    margin-top: 15px;
+}
+
+.navbar ul, .navbar-musique ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-autres ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navbar-autres ul li{
+    flex-basis: 33.333333%;
+}
+
+.horns img{
+    border-radius: 50%;
+}
+
+.horns_rev img{
+    border-radius: 50%;
+    transform: rotate(318deg);
+}
+
+.navbar a, .navbar-musique a, .navbar-autres a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover, .navbar-musique a:hover, .navbar-autres a:hover{
+    color: goldenrod;
+}
+
+.brothers{
+    margin: auto;
+    max-width: 450px;
+    margin-top: 30px;
+}
+
+.brothers img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.cards{
+    max-width: 1440px;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card{
+    padding: 30px;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-image: url(../images/thunder.jpg);
+    background-size: cover;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+}
+
+.card__header p{
+    font-style: italic;
+}
+
+.card__img{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.section_musique{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+.musique_titre{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.musique_titre h2{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    transform: translateX(147px);
+}
+
+
+.section_musique header p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.section_musique > div > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: darkred;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    height: auto;
+    width: 600px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.carousel-wrapper {
+    height: 300px;
+    position: relative;
+    width: 600px;
+    display: block;
+    margin: 50px auto ;
+    border: 2px solid black;
+}
+  
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+  
+[id^= "item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('../images/black_sabbath.jpg');
+    background-size: cover;
+}
+
+.item-2 {
+    background: url('../images/iron_maiden.jpg');
+    background-size: cover;
+}
+
+.item-3 {
+    background: url('../images/judas_priest.jpg');
+    background-size: cover;
+}
+
+.item-4 {
+    background: url('../images/king_diamond.jpg');
+    background-size: cover;
+}
+  
+*:target ~ .item-1{
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4 {
+    z-index: 4;
+    opacity: 1;
+}
+
+table, th, td{
+    border: 2px solid black;
+}
+
+.tableau_loisirs{
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    height: auto;
+    width: 900px;
+    background-color: goldenrod;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.tableau_loisirs th{
+    width: 900px;
+    height: auto;
+}
+
+.tableau_loisirs td{
+    height: 300px;
+    width: 300px;
+}
+
+.tableau_loisirs img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.blinking_msg{
+    font-weight: bold;
+    color: red;
+    animation: msg 1s linear infinite;
+}
+
+@keyframes msg{
+    50% {
+      opacity: 0;
+    }
+}
+
+.sel_cont{
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border: 3px ridge white;
+    border-radius: 20px;
+    padding: 5px 0px 10px 0px;
+}
+
+.sel_cont select{
+    align-self: center;
+    width: auto;
+    background-color: darkred;
+    color: white;
+}
+
+.sel_cont select-selected{
+    font-size: 2rem;
+}
+
+.section_autres{
+    margin-top: 30px;
+}
+
+.section_autres iframe{
+    border: 3px solid black;
+}
+
+
+
+
+
+
+
+

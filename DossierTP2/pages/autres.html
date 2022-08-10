@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---Autres intérêts---</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/spectacles.js"></script>
+</head>
+<body onload="choixSpectacle();">
+    
+    <a href="../index.html" class="home"><h1>TROU DES FRÈRES NORMANDIN</h1></a>
+    <marquee direction="left" behavior="scroll" scrollamount="10">
+        VOUS VOICI MALHEUREUSEMENT SUR LE SITE WEB PERSONNEL DE DAVID ET MARTIN NORMANDIN
+    </marquee>
+    <div class="navbar-autres">
+        <ul>
+            <li>
+                <a href="musique.html">MUSIQUES PRÉFÉRÉES</a>
+            </li>
+            <li>
+                <a href="loisirs.html">LOISIRS PRÉFÉRÉS</a>
+            </li>
+            <li>
+                <a href="../index.html">PAGE D'ACCUEIL</a>
+            </li>
+            <li>
+                <div class="sel_cont">
+                    <label for="idSpectacle">Quelques spectacles mémorables</label>
+                    <br>
+                    <select id="idSpectacle" onchange="choixSpectacle();">
+                        <option value="im" selected>Iron Maiden</option>
+                        <option value="jp">Judas Priest</option>
+                        <option value="bs">Black Sabbath</option>
+                        <option value="kd">King Diamond</option>
+                    </select>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="section_autres">
+        <iframe id="idIframe" width="1100" height="630" src=""></iframe>
+    </section>
+
+
+
+</body>
+</html>

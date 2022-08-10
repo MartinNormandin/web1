@@ -1,0 +1,39 @@
+.navbar{
+    background-color: aqua; 
+    width:100%;
+    height:55px;
+    border-style:ridge; 
+    border-color:aquamarine;
+ }
+
+ .bgnavbarmusique{
+     background-color: honeydew;
+ }
+ 
+ .divmusique{
+    padding-top: 17px;
+    padding-left:30px; 
+    font-size:1.3em;
+    float:left;
+ }
+ .divlogo{
+     float: left;
+ }
+ .imglogo{
+    width: 55px;
+    height: 55px;
+ }
+
+ .divmaison{
+     padding-top: 13px; 
+     padding-right:30px; 
+     font-size:1.3em;
+     float:right
+ }
+ .maison{
+     font-size:2rem;
+     color:cornflowerblue
+ }
+ .maison:hover{
+     color:red
+ }    
